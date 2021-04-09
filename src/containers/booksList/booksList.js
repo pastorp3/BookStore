@@ -2,7 +2,7 @@
 
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Book from '../book/book';
+import Book from '../../components/book/book';
 
 const BookList = ({ books }) => {
   return (
@@ -10,7 +10,7 @@ const BookList = ({ books }) => {
       <h1>Books List</h1>
       <table>
         <tbody>
-          { books.map((book) => <Book key={book.id} title={book.title} categorie={book.categorie} />)}
+          { books.map((book) => <Book key={book.id} id={book.id} title={book.title} categorie={book.categorie} />)}
         </tbody>
       </table>
     </div>

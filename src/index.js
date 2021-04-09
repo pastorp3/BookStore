@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import App from './App';
+import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
-import bookReducer from './containers/reducers/book';
+import bookReducer from './reducers/book';
 
 const store = createStore(bookReducer);
 

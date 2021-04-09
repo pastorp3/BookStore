@@ -13,7 +13,7 @@ const initialState = [
   },
 ];
 
-let lastId = 0;
+let lastId = 1;
 
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {

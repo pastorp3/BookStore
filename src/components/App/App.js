@@ -1,6 +1,6 @@
 import './App.css';
-import BookList from './components/booksList/booksList';
-import BookForm from './components/booksForm/booksForm';
+import BookList from '../../containers/booksList/booksList';
+import BookForm from '../../containers/booksForm/booksForm';
 
 function App() {
   return (

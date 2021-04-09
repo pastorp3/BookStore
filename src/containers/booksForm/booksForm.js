@@ -2,7 +2,7 @@
 
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { add } from '../../containers/actions/index';
+import { add } from '../../actions/index';
 
 const BookForm = ({ addBook }) => {
   const handleForm = (event) => {
