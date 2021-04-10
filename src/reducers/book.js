@@ -1,19 +1,18 @@
 /* eslint-disable no-return-assign */
 
+const randomNum = () => Math.floor(Math.random() * 100);
 const initialState = [
   {
-    id: 0,
+    id: randomNum(),
     title: 'Test1',
     categorie: 'Action',
   },
   {
-    id: 1,
+    id: randomNum(),
     title: 'Test2',
     categorie: 'Horror',
   },
 ];
-
-let lastId = 1;
 
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -21,7 +20,7 @@ const bookReducer = (state = initialState, action) => {
       return [
         ...state,
         {
-          id: lastId += 1,
+          id: randomNum(),
           title: action.book.title,
           categorie: action.book.categorie,
         },
