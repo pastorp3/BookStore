@@ -6,12 +6,13 @@ import Book from '../../components/book/book';
 import { remove } from '../../actions/index';
 
 const BookList = ({ books, removeBook }) => {
+  const handleRemove = (id) => removeBook(id);
   return (
     <div>
       <h1>Books List</h1>
       <table>
         <tbody>
-          { books.map((book) => <Book key={book.id} id={book.id} title={book.title} categorie={book.categorie} remove={removeBook} />)}
+          { books.map((book) => <Book key={book.id} id={book.id} title={book.title} category={book.categorie} remove={handleRemove} />)}
         </tbody>
       </table>
     </div>
