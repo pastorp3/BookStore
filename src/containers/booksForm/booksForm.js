@@ -1,12 +1,14 @@
 /* eslint-disable arrow-body-style */
 
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { add } from '../../actions/index';
 
 const BookForm = ({ addBook }) => {
+  const [title, SetTitle] = useState('');
+  const [categorie, setCategorie] = useState('Action');
   const handleForm = (event) => {
-    const title = event.target.title.value;
     const categorie = event.target.categorie.value;
     addBook({
       title,
@@ -21,13 +23,13 @@ const BookForm = ({ addBook }) => {
         <label htmlFor="title">
           Title
           <br />
-          <input type="text" id="title" />
+          <input type="text" id="title" onChange={(e) => SetTitle(e.target.value)} />
         </label>
         <br />
         <label htmlFor="categorie">
           Categorie
           <br />
-          <select id="categorie">
+          <select id="categorie" value={categorie} onChange={(e) => setCategorie(e.target.value)}>
             <option value="Action">Action</option>
             <option value="Biography">Biography</option>
             <option value="History">History</option>
