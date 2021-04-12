@@ -1,24 +1,20 @@
-/* eslint-disable arrow-body-style */
-
-export const add = (book) => {
-  return {
+export const add = (book) => (
+  {
     type: 'CREATE_BOOK',
     book,
-  };
-};
+  }
+);
 
-export const remove = (book) => {
-  return {
+export const remove = (book) => (
+  {
     type: 'REMOVE_BOOK',
     book,
-  };
-};
+  }
+);
 
-export const filter = (book) => {
-  return {
+export const filter = (book) => (
+  {
     type: 'CHANGE_FILTER',
     book,
-  };
-};
-
-/* eslint-enable arrow-body-style */
+  }
+);

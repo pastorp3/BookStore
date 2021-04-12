@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import Book from '../../components/book/book';
-import Filter from '../../components/Filter/Filter';
+import CategoryFilter from '../../components/CategoryFilter/CategoryFilter';
 import { remove, filter } from '../../actions/index';
 
 const BookList = ({
@@ -15,7 +15,7 @@ const BookList = ({
 }) => {
   const handleRemove = (id) => removeBook(id);
   const [filter, setFilter] = useState('All');
-  const handleFilter = (event) => {
+  const handleFilterChange = (event) => {
     setFilter(event.target.value);
   };
   const submitFilter = (event) => {
@@ -26,7 +26,7 @@ const BookList = ({
   return (
     <div>
       <h1>Books List</h1>
-      <Filter changeFilter={handleFilter} value={filter} submit={submitFilter} />
+      <CategoryFilter changeFilter={handleFilterChange} value={filter} submit={submitFilter} />
       <table>
         <tbody>
           { filterList.map((book) => <Book key={book.id} id={book.id} title={book.title} category={book.categorie} remove={handleRemove} />)}
