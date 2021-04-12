@@ -14,4 +14,11 @@ export const remove = (book) => {
   };
 };
 
+export const filter = (book) => {
+  return {
+    type: 'CHANGE_FILTER',
+    book,
+  };
+};
+
 /* eslint-enable arrow-body-style */
