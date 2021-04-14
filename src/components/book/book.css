@@ -12,7 +12,7 @@
 }
 
 .category {
-  font-size:  2.197802197802198vh;
+  font-size: 2.197802197802198vh;
   color: #121212;
   opacity: 0.5;
   font-weight: bold;
@@ -32,12 +32,12 @@
 }
 
 .link {
-  color:#4386bf;
+  color: #4386bf;
   font-size: 2.197802197802198vh;
 }
 
 .button_link {
-  color:#4386bf;
+  color: #4386bf;
   font-size: 2.197802197802198vh;
   background-color: white;
   border: 0;
