@@ -1,0 +1,14 @@
+.filter_container {
+  padding: 30px 100px 0 70%;
+}
+
+.ApplyButton {
+  font-size: 12px;
+  background-color: #0290ff;
+  color: white;
+  border-radius: 4px;
+}
+
+select {
+  height: 50px;
+}

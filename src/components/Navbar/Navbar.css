@@ -1,0 +1,39 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #e8e8e8;
+  background-color: white;
+  padding: 20px 20px 20px 20px;
+}
+
+.container_1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.title {
+  color: #0290ff;
+  font-size: 5.808477237048666vh;
+  font-weight: bold;
+  font-family: Montserrat;
+}
+
+.sub_Title {
+  color: #121212;
+  font-size: 2.0408163265306123vh;
+  padding-left: 40px;
+}
+
+.opacity {
+  opacity: 0.5;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  margin-right: 190px;
+  padding-top: 10px;
+}

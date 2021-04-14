@@ -1,0 +1,99 @@
+#container {
+  background-color: #fff;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.left_container {
+  text-align: left;
+}
+
+.category {
+  font-size:  2.197802197802198vh;
+  color: #121212;
+  opacity: 0.5;
+  font-weight: bold;
+}
+
+.book_title {
+  font-size: 3.4536891679748822vh;
+  color: #121212;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.author {
+  font-size: 2.197802197802198vh;
+  color: #4386bf;
+  margin-bottom: 20px;
+}
+
+.link {
+  color:#4386bf;
+  font-size: 2.197802197802198vh;
+}
+
+.button_link {
+  color:#4386bf;
+  font-size: 2.197802197802198vh;
+  background-color: white;
+  border: 0;
+  border-right: 1px solid #e8e8e8;
+  border-left: 1px solid #e8e8e8;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.right_container {
+  text-align: left;
+}
+
+.current_chapter {
+  font-size: 2.0408163265306123vh;
+  font-weight: 300;
+  color: #121212;
+  opacity: 0.5;
+}
+
+.current_lesson {
+  font-size: 2.511773940345369vh;
+  color: #121212;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+
+.update_progess {
+  background-color: #0290ff;
+  padding: 7px 19px 8px 22px;
+  border-radius: 3px;
+  color: white;
+}
+
+.progress_container {
+  width: 78px;
+  height: 78px;
+  margin-right: 20px;
+}
+
+.mid_container {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progess {
+  font-size: 5.023547880690738vh;
+  color: #121212;
+}
+
+.completed {
+  font-size: 2.197802197802198vh;
+  color: #121212;
+  opacity: 0.5;
+}
