@@ -1,0 +1,48 @@
+.form_container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-top: 4px solid #e8e8e8;
+  padding: 30px 0 0 0;
+  text-align: left;
+}
+
+.main_container {
+  padding: 0 100px 0 100px;
+}
+
+form {
+  display: flex;
+}
+
+.add_book {
+  font-size: 3.1397174254317113vh;
+  color: #888;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.bookTitle {
+  width: 664px;
+  padding: 13px 0 13px 20px;
+  background-color: white;
+  border-radius: 4px;
+  border-color: #888;
+  font-size: 2.511773940345369vh;
+  color: #c4c4c4;
+}
+
+select {
+  width: 200px;
+  margin: 0 20px 0 20px;
+  padding: 16px 20px 16px 16px;
+  font-size: 2.511773940345369vh;
+  color: #c4c4c4;
+}
+
+.button {
+  width: 184px;
+  background-color: #0290ff;
+  border-radius: 3px;
+  color: white;
+  font-size: 2.0408163265306123vh;
+}

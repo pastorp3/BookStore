@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Book from '../../components/book/book';
 import CategoryFilter from '../../components/CategoryFilter/CategoryFilter';
 import { remove, filter } from '../../actions/index';
+import './bookList.css';
 
 const BookList = ({
   books,
@@ -25,13 +26,12 @@ const BookList = ({
   const filterList = filterValue !== 'All' ? books.filter((book) => book.categorie === filterValue) : books;
   return (
     <div>
-      <h1>Books List</h1>
       <CategoryFilter changeFilter={handleFilterChange} value={filter} submit={submitFilter} />
-      <table>
-        <tbody>
+      <div>
+        <div className="books_list">
           { filterList.map((book) => <Book key={book.id} id={book.id} title={book.title} category={book.categorie} remove={handleRemove} />)}
-        </tbody>
-      </table>
+        </div>
+      </div>
     </div>
   );
 };
